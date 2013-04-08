@@ -1,0 +1,57 @@
+<RelativeLayout android:orientation="vertical" 
+    			android:layout_width="fill_parent" 
+    			android:layout_height="fill_parent"
+  				xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <Button android:textSize="@dimen/start"
+            android:id="@+id/postcard"
+            android:background="@drawable/button_shape_small"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip" 
+            android:text="@string/sendpostcard"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+             />
+    
+    <Button android:textSize="@dimen/start"
+            android:id="@+id/photocard" 
+            android:background="@drawable/button_shape_small"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="20.0dip" 
+            android:text="@string/photocard" 
+            android:layout_below="@id/postcard"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+     />
+    
+    <TextView android:textStyle="bold"
+    	      android:id="@+id/why" 
+         	  android:background="#035083" 
+         	  android:layout_width="fill_parent"
+          	  android:layout_height="wrap_content"
+           	  android:layout_marginTop="20.0dip" 
+           	  android:text="@string/why" 
+              android:layout_below="@id/photocard" 
+              android:textColor="@android:color/white"
+     />
+ 
+  	<TextView android:id="@+id/whyus"
+    	      android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+           	  android:maxLines="5"
+           	  android:layout_below="@id/why" 
+     />
+  
+  <LinearLayout android:layout_width="fill_parent" 
+     		    android:layout_height="wrap_content" 
+        		android:layout_alignParentBottom="true">
+        
+        <include layout="@layout/contact" />
+    
+    </LinearLayout>
+
+</RelativeLayout>
